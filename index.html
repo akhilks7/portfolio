@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+
+<body class="">
+    <div class="fixed top-4 right-4 w-28 h-13 bg-black rounded-full flex  justify-center items-center float-right z-100 shadow hover:scale-105 transition-transform duration-300 ">
+        <button id="mobile-menu-button" class="text-white  flex  justify-center items-center ">
+            <i class="fas fa-bars text-xl"></i>
+            <p class="text-xl px-1">MENU</p>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden fixed bg-black rounded-lg mt-4 p-4 top-16 right-4 z-50">
+        <div class="space-y-4">
+            <a href="#home" class="block cursor-pointer text-white">
+                <p>Home</p>
+            </a>
+            <a href="#about" class="block cursor-pointer text-white hover:scale-105 transition-transform duration-300">About</a>
+            <a href="#services" class="block cursor-pointer text-white hover:scale-105 transition-transform duration-300">Skills</a>
+            <a href="#gallery" class="block cursor-pointer text-white hover:scale-105 transition-transform duration-300">Gallery</a>
+            <a href="#contact" class="block cursor-pointer text-white hover:scale-105 transition-transform duration-300">Contact</a>
+            <div class="pt-2 border-t border-gray-700"></div>
+            <div class="flex items-center text-gray-300 text-sm py-2">
+                <i class="fas fa-phone mr-2 text-yellow-400"></i>
+                <span class="font-medium">+91 6235452818</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+    <div class="absolute top-4 left-4 w-28 h-13  rounded-full flex  justify-center items-center hover:scale-105 transition-transform duration-300 ">
+        <a class="text-black  flex  justify-center items-center " href="#home">
+            <i class="fas fa-circle text-black me-1"></i>
+            <p class="text-xl px-1">Akhil K S</p>
+        </a>
+    </div>
+
+    <div class="bg-stone-300">
+
+        <section id="home">
+            <div class="flex grid md:grid-cols-2 lg:grid-cols-3 justify-center  mx-12 ">
+
+                <div class=" transform-x-100">
+                    <p class="mt-30 mx-10 ">
+                    <h1 class="text-2xl text-stone-600">Hey. I'm Akhil,</h1>
+
+                    <h1 class="text-6xl font-bold my-4">A SOFTWARE DEVELOPER & DESIGNER</h1>
+
+                    <h1 class="text-xl py-2 pe-20">Transforming ideas into stunning visuals UI/UX and brand design that
+                        captivates, engages, and
+                        delivers results.</h1>
+                    <a href="#contact">
+                        <div class="w-40 h-13 bg-black rounded-full flex  justify-center items-center my-4 hover:scale-105 transition-transform duration-300">
+                            <p class="text-white text-lg font-medium mb-1 ms-2">Contact me</p>
+                            <div class="bg-white rounded-full flex justify-center items-center p-2 ms-3"><i
+                                    class="fas fa-arrow-right text-xl text-black-700"></i></div>
+                        </div>
+                    </a>
+                    </p>
+                </div>
+
+                <div class="flex justify-center items-center top-0">
+                    <div
+                        class="relative flex w-full item-center   bg-gradient-to-t from-white-500 via-stone-00 to-stone-500 rounded-b-full">
+                        <img src="./media/6cc519f013abcf2ad6168a126ee877db-removebg-preview.png" alt=""
+                            class="w-full h-160 object-contain rounded-b-full">
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col items-center right-8 top-15 space-y-4">
+                    <div class="w-40 h-13 bg-black rounded-full flex justify-center items-center hover:scale-105 transition-transform duration-300 shadow-x">
+                        <p class="text-white text-lg font-medium ms-2">HTML5</p>
+                    </div>
+                    <div class="w-40 h-13 bg-black rounded-full flex justify-center items-center hover:scale-105 transition-transform duration-300 shadow-x">
+                        <p class="text-white text-lg font-medium ms-2">CSS3</p>
+                    </div>
+                    <div class="w-40 h-13 bg-black rounded-full flex justify-center items-center hover:scale-105 transition-transform duration-300 shadow-x">
+                        <p class="text-white text-lg font-medium ms-2">JavaScript</p>
+                    </div>
+                    <div class="w-40 h-13 bg-black rounded-full flex justify-center items-center hover:scale-105 transition-transform duration-300 shadow-x">
+                        <p class="text-white text-lg font-medium ms-2">Python Django</p>
+                    </div>
+                    <div class="w-40 h-13 bg-black rounded-full flex justify-center items-center hover:scale-105 transition-transform duration-300 shadow-x">
+                        <p class="text-white text-lg font-medium ms-2">SQL</p>
+                    </div>
+                    <div class="w-40 h-13 bg-black rounded-full flex justify-center items-center hover:scale-105 transition-transform duration-300 shadow-x">
+                        <p class="text-white text-lg font-medium ms-2">REACT</p>
+                    </div>
+                    <div class="w-40 h-13 bg-black rounded-full flex justify-center items-center hover:scale-105 transition-transform duration-300 shadow-x">
+                        <p class="text-white text-lg font-medium ms-2">C++</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <div
+            class="flex grid md:grid-cols-2 lg:grid-cols-4 divide-x-3 divide  justify-center items-center mt-8 gap-4  mx-30">
+            <div class="flex grid grid-rows-2 justify-center items-center hover:scale-105 transition-transform duration-300">
+                <p>
+                <h1 class="text-lg font-bold">USER-CENTERED DESIGN</h1>
+                <p class="mb-5 pt-2">Designs that prioritize user needs and enjoyable for all audiences.</p>
+                </p>
+            </div>
+            <div class="flex grid grid-rows-2 justify-center items-center hover:scale-105 transition-transform duration-300">
+                <p>
+
+                <h1 class="text-lg font-bold">INTUITIVE INTERFACES</h1>
+                <p class="mb-5 pt-2">Easy navigation for quick user actions and a smooth experience.</p>
+
+                </p>
+            </div>
+            <div class="flex grid grid-rows-2 justify-center items-center hover:scale-105 transition-transform duration-300">
+                <p>
+
+                <h1 class="text-lg font-bold">RESPONSIVE & MODERN</h1>
+                <p class="mb-5 pt-2">Modern layouts that adapt seamlessly to any device.</p>
+
+                </p>
+            </div>
+            <div class="flex grid grid-rows-2 justify-center items-center hover:scale-105 transition-transform duration-300">
+                <p>
+
+                <h1 class="text-lg font-bold">SEAMLESS PROTOTYPING</h1>
+                <p class="mb-5 pt-2">Build interactive prototypes fast for instant feedback.</p>
+
+                </p>
+            </div>
+        </div>
+        <section id="about">
+            <div class="grid lg:grid-cols-2 gap-10 lg:mx-20 mt-30 md:mx-10 mx-5">
+                <div>
+                    <h1 class="text-7xl font-bold">BUILDING MODERN WEB APPLICATIONS WITH THE MEARN STACK</h1>
+                    <div class="flex flex-wrap gap-4 mt-10">
+                        <div class="w-60 h-15 bg-black rounded-r-full flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                            <p class="text-white text-lg font-medium ms-2">MEARN STACK INTERN</p>
+                        </div>
+                        <div class="w-40 h-15 bg-black rounded-r-full flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                            <p class="text-white text-lg font-medium ms-2">BCA Graduate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <p class="lg:text-2xl font-semibold my-8 justify-content">
+                        Hi, I’m Akhil, a passionate MERN Stack Developer currently pursuing an internship at Luminar Technolab. My journey into web development started with a curiosity to understand how modern websites and applications work, and it has grown into a strong interest in building scalable, responsive, and user-friendly applications.
+                    </p>
+                    <p class="mt-2 lg:text-xl my-4">
+                        At Luminar, I’m gaining hands-on experience by working on real-world projects that allow me to apply my skills in MongoDB, Express.js, React, and Node.js. This internship has helped me sharpen my problem-solving abilities, learn industry best practices, and understand how to transform concepts into fully functional digital solutions.
+                    </p>
+                </div>
+                </div>
+            
+        </section>
+        <section id="services" class="my-10">
+
+            <div class=" mt-15 mb-20">
+                <h1 class="text-6xl font-bold text-center">Skills</h1>
+                <div class="w-28 mx-auto border-b-5 border-black mt-2"></div>
+            </div>
+            <div class=" flex mx-20 justify-center items-center my-10">
+                <div class="grid md:grid-cols-2  lg:grid-cols-4 grid-row-2 border-1 ">
+                    <div class="border-1 p-10 px-25 flex hover:scale-105 transition-transform duration-300">
+                        <i class="fab fa-html5 text-orange-500 text-3xl"></i>
+                        <p class="text-xl px-1">HTML5</p>
+                    </div>
+                    <div class="border-1 p-10 px-25 flex hover:scale-105 transition-transform duration-300">
+                        <i class="fab fa-css3-alt text-blue-500 text-3xl"></i>
+                        <p class="text-xl px-1">CSS3</p>
+                    </div>
+                    <div class="border-1 p-10 px-25 flex hover:scale-105 transition-transform duration-300">
+                        <i class="fab fa-js-square text-yellow-500 text-3xl"></i>
+                        <p class="text-xl px-1">JAVASCRIPT</p>
+                    </div>
+                    <div class="border-1 p-10 px-25 flex hover:scale-105 transition-transform duration-300">
+                        <i class="fab fa-python text-blue-400 text-3xl"></i>
+                        <p class="text-xl px-1">Python Django</p>
+                    </div>
+                    <div class="border-1 p-10 px-25 flex hover:scale-105 transition-transform duration-300">
+                        <i class="fab fa-react text-cyan-500 text-3xl"></i>
+                        <p class="text-xl px-1">React</p>
+                    </div>
+                    <div class="border-1 p-10 px-25 flex hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-wind text-teal-400 text-3xl"></i>
+                        <p class="text-xl px-1">TailwindCSS</p>
+                    </div>
+                    <div class="border-1 p-10 px-25 flex hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-database text-green-700 text-3xl"></i>
+                        <p class="text-xl px-1">SQL</p>
+                    </div>
+                    <div class="border-1 p-10 px-25 flex hover:scale-105 transition-transform duration-300">
+                        <i class="fab fa-bootstrap text-purple-700 text-3xl"></i>
+                        <p class="text-xl px-1">Bootstrap</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+        
+        <section id="gallery" class="my-30">
+            <div class="mx-20">
+                <h1 class="text-6xl font-bold text-center">Project Gallery</h1>
+                <div class="w-28 mx-auto border-b-5 border-black mt-3"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3  gap-4  mt-10 lg:mx-20  md:mx-10 mx-5">
+                <div class="w-auto lg:w-full sm:w-full  bg-stone-200 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                    <img src="./media/Screenshot 2025-08-17 220604.png" alt="project img" class="w-auto lg:w-full h-60 object-cover rounded-t-lg p-3 shadow-xl">
+                    <h1 class="text-xl font-bold mx-6 pt-5">Sono Restaurent</h1>
+                        <div class="flex px-4 pt-3 gap-4">
+                            <div class="w-40 h-10 bg-black rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">HTML5</p>
+                            </div>
+                            <div class="w-40 h-10 bg-black rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">CSS</p>
+                            </div>
+                            <div class="w-40 h-10 bg-black rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">Bootstrap</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex p-4 gap-4">
+                             <a rel="noopener noreferrer" href="https://github.com/akhilks7/Resturent.git" target="_blank">
+                                 <div class="w-30 h-10 bg-stone-700 rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                    <p class="text-white text-md font-medium ">GitHub</p>
+                                </div>
+                             </a>
+                             <a rel="noopener noreferrer" href="https://resturent-mauve.vercel.app/" target="_blank">
+                            <div class="w-30 h-10 bg-stone-700 rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">Live link</p>
+                            </div>
+                            </a>
+                        </div>
+                    
+                </div>
+                <div class="w-full  bg-stone-200 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                    <img src="./media/Screenshot 2025-08-17 220339.png" alt="project img" class="w-auto lg:w-full h-60 object-cover rounded-t-lg p-3 shadow-xl">
+                    <h1 class="text-xl font-bold mx-6 pt-5">Music Festa</h1>   
+                    <div class="flex p-4 gap-4">
+                            <div class="w-40 h-10 bg-black rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">HTML5</p>
+                            </div>
+                            <div class="w-40 h-10 bg-black rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">CSS</p>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        <div class="flex p-4 gap-4">
+                             <a rel="noopener noreferrer" href="https://github.com/akhilks7/Resturent.git" target="_blank">
+                                 <div class="w-30 h-10 bg-stone-700 rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                    <p class="text-white text-md font-medium ">GitHub</p>
+                                </div>
+                             </a>
+                            <a rel="noopener noreferrer" href="https://tailwind-five-jet.vercel.app/" target="_blank">
+                            <div class="w-30 h-10 bg-stone-700 rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">Live link</p>
+                            </div>
+                            </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="w-full  bg-stone-200 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                    <img src="./media/Screenshot 2025-08-17 220254.png" alt="project img" class="w-auto lg:w-fullw-full h-60 object-cover rounded-t-lg p-3 shadow-xl">
+                    <h1 class="text-xl font-bold mx-6 pt-5">Timeless Toast</h1>  
+                    <div class="flex p-4 gap-4">
+                            <div class="w-40 h-10 bg-black rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">HTML5</p>
+                            </div>
+                            <div class="w-40 h-10 bg-black rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">CSS</p>
+                            </div>
+                            <div class="w-40 h-10 bg-black rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">tailwindcss</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex p-4 gap-4">
+                             <a rel="noopener noreferrer" href="https://github.com/akhilks7/Resturent.git" target="_blank">
+                                 <div class="w-30 h-10 bg-stone-700 rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                    <p class="text-white text-md font-medium ">GitHub</p>
+                                </div>
+                             </a>
+                            <a rel="noopener noreferrer" href="https://tailwind-five-jet.vercel.app/" target="_blank">
+                            <div class="w-30 h-10 bg-stone-700 rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">Live link</p>
+                            </div>
+                            </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="w-full  bg-stone-200 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                   
+                    <img src="./media/Screenshot 2025-08-17 220205.png" alt="project img" class="w-auto lg:w-fullw-full h-60 object-cover rounded-t-lg p-3 shadow-xl">
+                    <h1 class="text-xl font-bold mx-6 pt-5">Uber Clone</h1>   
+                    <div class="flex p-4 gap-4">
+                            <div class="w-40 h-10 bg-black rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">HTML5</p>
+                            </div>
+                            <div class="w-40 h-10 bg-black rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">CSS</p>
+                            </div>
+                            <div class="w-40 h-10 bg-black rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">Bootstrap</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex p-4 gap-4">
+                             <div class="w-30 h-10 bg-stone-700 rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">GitHub</p>
+                            </div>
+                            <a href="https://tailwind-five-jet.vercel.app/">
+                            <div class="w-30 h-10 bg-stone-700 rounded-xl flex justify-center items-center hover:scale-105 transition-transform duration-300">
+                                <p class="text-white text-md font-medium ">Live link</p>
+                            </div>
+                            </a>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class=" mt- mb-20">
+                <h1 class="text-6xl font-bold text-center">Contact</h1>
+                <div class="w-28 mx-auto border-b-5 border-black mt-2"></div>
+            </div>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6 md:px-0 items-center">
+            <!-- Contact Form -->
+            <div class="w-full md:w-[450px] rounded-2xl shadow-lg bg-white py-10 px-6 md:px-8 grid grid-cols-2 gap-x-4 gap-y-6 mx-auto">
+                <input class="w-full h-[45px] rounded-lg border border-black-300 px-2 focus:outline-none focus:ring-2 focus:ring-stone-500" type="text" placeholder="First Name">
+                <input class="w-full h-[45px] rounded-lg border border-black-300 px-2 focus:outline-none focus:ring-2 focus:ring-stone-500" type="text" placeholder="Last Name">
+
+                <input class="w-full col-span-2 h-[45px] rounded-lg border border-black-300 px-2 focus:outline-none focus:ring-2 focus:ring-stone-500" type="text" placeholder="Email">
+                <input class="w-full col-span-2 h-[45px] rounded-lg border border-black-300 px-2 focus:outline-none focus:ring-2 focus:ring-stone-500" type="text" placeholder="Phone">
+
+                <textarea class="resize-none col-span-2 w-full h-32 rounded-lg border border-black-300 p-2 focus:outline-none focus:ring-2 focus:ring-stone-500" placeholder="Your message..."></textarea>
+
+                <button class="col-span-2 bg-stone-500 text-white py-2 px-6 rounded-lg hover:bg-[#a78d5a] transition-all duration-300">
+                    Submit
+                </button>
+            </div>
+
+            <!-- Contact Info & Socials -->
+            <div class="flex flex-col justify-center w-full md:w-auto text-2xl">
+                <!-- Contact Info -->
+                <div class="mb-5 text-center md:text-left">
+                    <h3 class="text-4xl font-semibold text-stone-700 mb-8">Get in touch</h3>
+                    <div class="space-y-5">
+                        <p class="flex items-center text-stone-700">
+                            <i class="fas fa-envelope mr-3 text-stone-800 text-2xl"></i>
+                            akhilksks47@gmail.com
+                        </p>
+                        <p class="flex items-center text-stone-700">
+                            <i class="fas fa-phone-alt mr-3 text-stone-800 text-2xl"></i>
+                            +91 6235452818
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Socials -->
+                <div class="text-center md:text-left mt-4">
+                    
+                    <div class="flex justify-center md:justify-start gap-4">
+                        <a rel="noopener noreferrer" href="https://www.linkedin.com/in/akhilks7/" target="_blank" aria-label="LinkedIn" class="group w-12 h-12 rounded-full bg-stone-800/20 flex items-center justify-center hover:bg-stone-800/30 transition-all shadow-md hover:shadow-lg">
+                            <i class="fab fa-linkedin-in text-stone-700 group-hover:text-stone-800 text-xl transition-colors"></i>
+                        </a>
+                        <a rel="noopener noreferrer" href="https://github.com/dev-akhilks7" target="_blank" aria-label="GitHub" class="group w-12 h-12 rounded-full bg-stone-800/20 flex items-center justify-center hover:bg-stone-800/30 transition-all shadow-md hover:shadow-lg">
+                            <i class="fab fa-github text-stone-700 group-hover:text-stone-800 text-xl transition-colors"></i>
+                        </a>
+                        <a rel="noopener noreferrer" href="https://x.com/akhilks7" target="_blank" aria-label="Twitter" class="group w-12 h-12 rounded-full bg-stone-800/20 flex items-center justify-center hover:bg-stone-800/30 transition-all shadow-md hover:shadow-lg">
+                            <i class="fab fa-twitter text-stone-700 group-hover:text-stone-800 text-xl transition-colors"></i>
+                        </a>
+                        <a rel="noopener noreferrer" href="https://www.instagram.com/akhilks7/" target="_blank" aria-label="Instagram" class="group w-12 h-12 rounded-full bg-stone-800/20 flex items-center justify-center hover:bg-stone-800/30 transition-all shadow-md hover:shadow-lg">
+                            <i class="fab fa-instagram text-stone-700 group-hover:text-stone-800 text-xl transition-colors"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container mx-auto py-6 text-center">
+                <div class="w-full mx-auto border-b-5 border-black mt-2"></div>
+                <p class="text-stone-700 mt-5">© 2023 Akhil K S. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+<html>  
+            
+        
